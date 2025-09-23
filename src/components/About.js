@@ -93,17 +93,18 @@ function About() {
                 </div>
 
                 {/* Profile image placeholder */}
-                <div className="relative">
+<div className="relative bg-gradient-to-br from-white/10 to-white/5 rounded-3xl p-4 border border-white/20 aspect-square">
+  <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-white/5 rounded-3xl blur-2xl" />
 
-                  <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-white/5 rounded-3xl blur-2xl" />
-                  <div className="relative bg-gradient-to-br from-white/10 to-white/5 rounded-3xl p-8 border border-white/20 aspect-square flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-32 h-32 bg-white/10 rounded-full mx-auto mb-6 flex items-center justify-center border border-white/20">
-                        <span className="text-4xl font-bold text-white">JD</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+  <div className="relative w-full h-full overflow-hidden rounded-2xl">
+    <img
+      src="/profile.jpg" // make sure this is in the public folder
+      alt="profile pic"
+      className="w-full h-full object-cover"
+    />
+  </div>
+</div>
+
               </div>
 
               {/* Tools & Technologies */}

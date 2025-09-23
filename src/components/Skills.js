@@ -34,8 +34,9 @@ function Skills() {
       color: "from-green-400 to-emerald-400",
       skills: [
         { name: "HTML CSSS Bootstrap", level: 85 },
-        { name: "react", level: 88 },
-        { name: "jinja templates", level: 90 },
+        { name: "React", level: 88 },
+        { name: "Jinja templates", level: 90 },
+        { name: "Javscript", level: 70 },
       ]
     },
     {
@@ -47,7 +48,8 @@ function Skills() {
         { name: "GitHub", level: 88 },
         { name: "VS Code", level: 95 },
         { name: "NPM/pip", level: 80 },
-        { name: "virtualenv", level: 70 }
+        { name: "Postman / Insomnia", level: 90 },
+        { name: "Docker", level: 90 }
       ]
     }
   ]
