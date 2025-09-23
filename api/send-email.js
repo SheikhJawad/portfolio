@@ -1,4 +1,3 @@
-// api/send-email.js
 import nodemailer from "nodemailer";
 
 export default async function handler(req, res) {
@@ -7,12 +6,16 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { name, email, message } = req.body;
+    const { name, email, message } = req.body || {};
+
+    if (!name || !email || !message) {
+      return res.status(400).json({ success: false, message: "Missing fields" });
+    }
 
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
-      port: process.env.SMTP_PORT,
-      secure: false,
+      port: Number(process.env.SMTP_PORT) || 587,
+      secure: process.env.SMTP_SECURE === "true", // false for 587
       auth: {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASS,
@@ -22,13 +25,14 @@ export default async function handler(req, res) {
     await transporter.sendMail({
       from: `"Portfolio Contact" <${process.env.SMTP_USER}>`,
       to: process.env.TO_EMAIL,
-      subject: "New Contact Form Submission",
+      subject: `New Contact Form submission from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
+      html: `<p><b>Name:</b> ${name}</p><p><b>Email:</b> ${email}</p><p><b>Message:</b><br/>${message}</p>`
     });
 
     return res.status(200).json({ success: true, message: "Email sent successfully" });
-  } catch (error) {
-    console.error("Error sending email:", error);
+  } catch (err) {
+    console.error("send-email error:", err);
     return res.status(500).json({ success: false, message: "Failed to send email" });
   }
 }

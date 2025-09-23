@@ -32,6 +32,7 @@ const handleSubmit = async (e) => {
       body: JSON.stringify(formData),
     });
 
+
     const data = await res.json();
     console.log(" API Response:", data); 
 
