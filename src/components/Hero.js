@@ -95,8 +95,8 @@ function Hero() {
         {/* Enhanced buttons */}
         <div className="flex flex-col sm:flex-row justify-center gap-6 animate-fade-in-up animation-delay-800">
           <a
-            href ="/Zain-resume.pdf"
-            download="M_Zain_Saleem_Resume.pdf"
+            href ="/jawad_resume.pdf"
+            download="jawad_resume.pdf"
             className="group relative inline-flex items-center justify-center px-8 py-4 bg-white text-black hover:bg-gray-100 transition-all duration-300 rounded-full text-lg font-semibold shadow-2xl hover:shadow-white/20 hover:scale-105 overflow-hidden"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-white to-gray-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
