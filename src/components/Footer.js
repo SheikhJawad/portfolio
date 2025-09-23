@@ -9,21 +9,21 @@ function Footer() {
     {
       name: "LinkedIn",
       icon: Linkedin,
-      href: "https://www.linkedin.com/in/zain-saleem-24417625b/",
+      href: "https://www.linkedin.com/in/jawad-yousaf-devloper360/",
       color: "hover:text-blue-400",
       bgColor: "hover:bg-blue-400/10"
     },
     {
       name: "GitHub",
       icon: Github,
-      href: "https://github.com/zain1873",
+      href: "https://github.com/SheikhJawad",
       color: "hover:text-gray-300",
       bgColor: "hover:bg-gray-300/10"
     },
     {
       name: "Email",
       icon: Mail,
-      href: "mailto:zain.saleem155@gmail.com",
+      href: "mailto:hafizjawad858@gmail.com",
       color: "hover:text-green-400",
       bgColor: "hover:bg-green-400/10"
     }
