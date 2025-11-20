@@ -27,6 +27,14 @@ function Projects() {
       liveLink: "https://app.camzify.com/",
       githubLink: "https://github.com/SheikhJawad"
     },
+    {
+      title: "Dunya Video Marketting Autopilot",
+      description: "Customized Ai based marketting videos for your property",
+      image: "/dunya.png",
+      tech: ["django", " React", " microservices", "Redis","LLMs", "Aws","Ninja","Docker"],
+      liveLink: "https://www.getdunya.ai/",
+      githubLink: "https://github.com/SheikhJawad"
+    },
   ]
 
   return (

@@ -27,7 +27,7 @@ function Hero() {
       
       {/* Grid overlay for tech feel */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[length:100px_100px]" />
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(0, 255, 136, 0.9)_1px,transparent_1px),linear-gradient(90deg,rgba(0, 255, 98, 1)_1px,transparent_1px)] bg-[length:100px_100px]" />
       </div>
       
       {/* Floating elements with better positioning */}
