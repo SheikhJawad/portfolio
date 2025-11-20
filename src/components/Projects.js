@@ -13,7 +13,7 @@ function Projects() {
     },
     {
       title: "Buybox Tinder real Estate",
-      description: "A comprehensive tinder dashboard for property visualization.",
+      description: "A comprehensive tinder dashboard for property connecting sellers and buyers.",
       image: "/offa.png",
       tech: ["django", "REST Api", " Jinja Templates", "Postgresql","Celery","Redis","Docker"],
       liveLink: "https://offa.com/",
@@ -21,7 +21,7 @@ function Projects() {
     },
     {
       title: "Camzify video surveillance",
-      description: "Globally recvognized video surveillance system.",
+      description: "Globally recognized video surveillance system.",
       image: "/camzify.png",
       tech: ["django", " React", " microservices", "Redis"," Redis", "GCP","ML/AI","Docker"],
       liveLink: "https://app.camzify.com/",
